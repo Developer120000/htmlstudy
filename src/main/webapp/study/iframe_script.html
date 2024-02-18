@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function setMsg() {
+		document.getElementById('cc').innerHTML=Date()
+	}
+</script>
+</head>
+<body>
+	<p><iframe src="div.html" name="bb"></iframe></p>
+	<p><a href="list.html" target="bb">할인</a></p>
+	
+	
+	<h2>자바 스크립트</h2>
+	<p id="aa"></p>
+	<script type="text/javascript">
+		document.getElementById("aa").innerHTML="hi nice";
+	</script>
+	<hr>
+	
+	<p id="bb"></p>
+	<button onclick="document.getElementById('bb').innerHTML=Date()">1</button>
+	<hr>
+	
+	<p id="cc"></p>
+	<button onclick="setMsg()">눌러주세요2</button>
+	
+	<!-- style 변경 -->
+	<p id="dd">한국 ICT 인재 개발원</p>
+	<button onclick="setMsg2()">스타일변경</button>
+	<button onclick="setMsg3()">원래대로</button>
+	<hr>
+	
+	<!-- src 변경 -->
+	<img id="img" src="../images/img06_1.gif">
+	<button onclick="img_on()">켜기</button>
+	<button onclick="img_off()">끄기</button>
+</body>
+</html>

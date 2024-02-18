@@ -5,7 +5,7 @@
 <title>배경그림</title>
 </head>
 <body style="background-image: url(../images/img02.jpg);
-			 background-repeat: no repeat-x;
+			 background-repeat: no-repeat;
 			 background-attachment: fixed;
 			 background-size: cover;">
 <!-- 
@@ -16,10 +16,20 @@
 				  no-repeat = 그림하나
 				  repeat-x => x 축만 바둑판	
 				  repeat-y => y 축만 바둑판
-	   화면 크기에 맞추기
-	   background-repeat:no-repeat
-	   background-size:cover
-	   background-attachment:fixed;	
+	   화면 크기에 맞추기 (3개 같이쓰기)
+	   1. background-repeat:no-repeat 
+	   2. background-size:cover		(배경이미지 크기 조절)
+	   								auto : 원래 배경 이미지 크기만큼 표시(기본 값)
+									contain : 지정한 요소 안에 배경 이미지가 다 들어오도록 이미지를 확대/축소
+									cover : 지정한 요소를 다 덮도록 배경이미지를 확대/축소
+									크기 값 : 너비 값과 높이 값을 지정
+									백분율 : 지정한 요소를 기준으로 백분율 값을 지정
+	   3. background-attachment:fixed;	(배경이미지의 스크롤 여부 지정)
+	   								scroll : 선택한 요소와 같이 움직입니다. 내용을 스크롤하면 배경 이미지는 스크롤되지 않습니다.
+									fixed : 움직이지 않습니다.
+									local : 선택한 요소와 같이 움직입니다. 내용을 스크롤하면 배경 이미지도 스크롤됩니다.
+									initial : 기본값으로 설정합니다.
+									inherit : 부모 요소의 속성값을 상속받습니다.
 	
  -->
  <h2>이미지와 배경 이미지</h2>
@@ -27,5 +37,6 @@
  <h2>이미지와 배경 이미지</h2>
  <h2>이미지와 배경 이미지</h2>
  <h2>이미지와 배경 이미지</h2>
+
 </body>
 </html>

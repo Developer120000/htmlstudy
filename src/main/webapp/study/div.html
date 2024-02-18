@@ -2,45 +2,30 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>block_inline</title>
+<title>Insert title here</title>
 <style type="text/css">
-	/* mycontainer 클래스 안에 있는 div 들 */
 	.mycontainer div{
-		float: left; /* 왼쪽으로 붙이기 */
-		width: 33%;  /* 너비 */
+		float: left;
+		width: 33%;
 	}
-	
 	.mycontainer{
-		width: 100%;  /* 역활 모르겠음 */
-		overflow: auto; /* 내용이 길어졌을때 알아서  */
+		width: 100%;
+		overflow: auto;
 	}
-	
 	.mycontainer2 div{
-		display: inline-block; /* div 각각 인라인블럭으로 보여서 일자로 만듬 */
+		display: inline-block;
 	}
-	
 	.mycontainer3 {
-		display: flex; /* 감싸는 전체를 말함 */
+		display: flex;
 	}
-	
 	.mycontainer4 {
 		display: grid;
-		grid-template-columns: 33% 33% 33%;  /* grid는 애 같이 써야함, columns(가로변길이조절), row(세로변길이조절) */
-	}	
+		grid-template-columns: 33% 33% 33%; /* grid는 애 같이 써야함, columns(가로변길이조절), row(세로변길이조절) */
+	}
+	
 </style>
 </head>
 <body>
-<!-- 
-	block level element : 항상 새 줄에서 시작하며, 전체 너비를 차지한다.
-		- <div>, <p>, <h1> ~ <h6>, <table>, <form>, <ul>, <hr> 등
-	
-	inline element : 필요한 만큼만 너비를 차지한다.
-		- <span>, <input>, <button>, <lavel>, <img>, <a> 등
-	
-	** 인라인 요소에는 블록 요소가 포함 될 수 없다.	
- -->
- 	<!-- div : 다른 요소(태그) 들을 포함 하는 컨테이너 역활을 한다.
- 			   또는 영역을 나누는 역활을 한다.(자기 영역을 가지고 있음) -->
   <div style="background-color: red;">Hello World</div><br>
   <span style="background-color: green;">Hello World</span><br>
   <hr>
@@ -164,6 +149,5 @@
 	  <p>Rome has almost 3 million inhabitants.</p>
 	</div>
 </div>
-
 </body>
 </html>
