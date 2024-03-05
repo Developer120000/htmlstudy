@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<style>
+  div{
+  	width: 640px;
+  	height: 426px;
+  	margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1025px) {
+    div {
+    	background-image: url('image1.jpg');
+    	background-size: cover;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    div {
+    	background-image: url('image2.jpg');
+    	background-size: cover;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    div {
+    	background-image: url('image1.jpg');
+    	background-size: cover;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    div {
+    	background-image: url('image2.jpg');
+    	background-size: cover;
+    }
+  }
+</style>
+</head>
+<body>
+<div>
+</div>
+</body>
+</html>

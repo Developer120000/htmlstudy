@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		width: 300px;
+		height: 300px;
+		border: 1px solid black;
+	}
+  @media screen and (min-width: 1025px) {
+    div {
+		background: red;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    div {
+    	background: blue;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    div {
+    	background: green;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    div {
+    	background: black;
+    }
+  }
+</style>
+</head>
+<body>
+	<div></div>
+</head>
+</html>
